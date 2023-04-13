@@ -20,9 +20,9 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
-  username: rails
-  password: geeks2018
+  # host: localhost
+  # username: rails
+  # password: geeks2018
 
 development:
   <<: *default
@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: Fase08_ProfitManager_API_production
   username: Fase08_ProfitManager_API
   password: <%= ENV["FASE08_PROFITMANAGER_API_DATABASE_PASSWORD"] %>
