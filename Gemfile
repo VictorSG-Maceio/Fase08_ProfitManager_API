@@ -49,5 +49,11 @@ end
 
 gem "devise", "~> 4.9"
 
-gem "devise_token_auth", "~> 1.2"
 gem "omniauth", "~> 2.1"
+gem "devise_token_auth", "~> 1.2"
+
+gem "rack-cors", "~> 2.0"
+
+gem "active_model_serializers", "~> 0.10.13"
+
+gem "ransack", "~> 4.0"
