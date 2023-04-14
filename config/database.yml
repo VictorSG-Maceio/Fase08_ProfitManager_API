@@ -87,6 +87,6 @@ production:
   url: <%= ENV["DATABASE_URL"] %>
   # host: <%= ENV["PGHOST"] %>
   # port: <%= ENV["PGPORT"] %>
-  # database: <%= ENV["PGDATABASE"] %> #Fase08_ProfitManager_API_production
-  # username: <%= ENV["PGUSER"] %> #Fase08_ProfitManager_API
-  # password: <%= ENV["PGPASSWORD"] %>
+  database: Fase08_ProfitManager_API_production
+  username: Fase08_ProfitManager_API
+  password: <%= ENV["FASE08_PROFITMANAGER_API_DATABASE_PASSWORD"] %>
